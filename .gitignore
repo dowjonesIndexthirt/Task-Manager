@@ -1,2 +1,5 @@
 .gitignore
 src/
+.DS_Store
+build/
+.qtcreator/
