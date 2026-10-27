@@ -16,8 +16,15 @@ add_executable(CS370
     main.cpp
     mainwindow.cpp
     mainwindow.h
-    taskmanager.cpp
-    taskmanager.h
+    DrewsPart/taskManager.cpp
+    DrewsPart/taskManager.hpp
+    src/procRead.cpp
+    src/procRead.hpp
+)
+
+target_include_directories(CS370 PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/DrewsPart
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
 target_link_libraries(CS370 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
