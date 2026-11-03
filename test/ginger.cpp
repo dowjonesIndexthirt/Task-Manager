@@ -4,10 +4,10 @@
 #include <cassert>
 
 /* Taken from src/procRead.cpp */
-bool isNumber(const std::string& str){
-        return !(str.empty()) && std::all_of(str.begin(), str.end(), [](unsigned char c){
-                                                                        return std::isdigit(c);
-                                                                     }); // Better with lambda
+inline bool isNumber(const std::string& str){
+    return !(str.empty()) && std::all_of(str.begin(), str.end(), [](unsigned char c){
+                                                                    return std::isdigit(c);
+                                                                    }); // Better with lambda
 }
 
 int main(void){
