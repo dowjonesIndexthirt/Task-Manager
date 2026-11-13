@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 
 #include <QAbstractItemView>
+#include <QComboBox>
 #include <QDialog>
 #include <QFormLayout>
 #include <QLabel>
@@ -12,6 +13,7 @@
 #include <QTableWidgetItem>
 #include <QVBoxLayout>
 #include <QWidget>
+#include <QTimer>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -36,8 +38,25 @@ MainWindow::MainWindow(QWidget *parent)
     auto *buttonLayout = new QHBoxLayout;
     auto *showButton = new QPushButton(tr("Show selected task"), container);
     auto *refreshButton = new QPushButton(tr("Refresh"), container);
+    sortField = new QComboBox(container);
+    sortField->addItem(tr("PID"));
+    sortField->addItem(tr("User ID"));
+    sortField->addItem(tr("Name"));
+    sortField->addItem(tr("User CPU ticks"));
+    sortField->addItem(tr("System CPU ticks"));
+    sortField->addItem(tr("RAM (KB)"));
+    sortField->addItem(tr("Virtual memory (KB)"));
+
+    sortOrder = new QComboBox(container);
+    sortOrder->addItem(tr("Ascending"));
+    sortOrder->addItem(tr("Descending"));
+    auto *sortButton = new QPushButton(tr("Sort"), container);
+
     buttonLayout->addWidget(showButton);
     buttonLayout->addWidget(refreshButton);
+    buttonLayout->addWidget(sortField);
+    buttonLayout->addWidget(sortOrder);
+    buttonLayout->addWidget(sortButton);
 
     layout->addWidget(taskTable);
     layout->addLayout(buttonLayout);
@@ -47,6 +66,8 @@ MainWindow::MainWindow(QWidget *parent)
             this, &MainWindow::showSelectedTaskInfo);
     connect(refreshButton, &QPushButton::clicked,
             this, &MainWindow::refreshTaskInfo);
+    connect(sortButton, &QPushButton::clicked,
+            this, &MainWindow::sortTasks);
     connect(taskTable, &QTableWidget::cellDoubleClicked,
             this, [this](int, int) { showSelectedTaskInfo(); });
 
@@ -57,6 +78,46 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::refreshTaskInfo()
 {
     manager.refresh();
+    populateTaskTable();
+}
+
+void MainWindow::refreshTaskInfoPeriodically()
+{
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &MainWindow::refreshTaskInfo);
+    timer->start(5000); 
+}
+
+void MainWindow::sortTasks()
+{
+    const bool ascending = sortOrder->currentIndex() == 0;
+
+    switch (sortField->currentIndex()) {
+    case 0:
+        manager.sortByPID(ascending);
+        break;
+    case 1:
+        manager.sortByUID(ascending);
+        break;
+    case 2:
+        manager.sortByName(ascending);
+        break;
+    case 3:
+        manager.sortByUserCpuTicks(ascending);
+        break;
+    case 4:
+        manager.sortBySystemCpuTicks(ascending);
+        break;
+    case 5:
+        manager.sortByResidentMemKB(ascending);
+        break;
+    case 6:
+        manager.sortByVirtMemKB(ascending);
+        break;
+    default:
+        return;
+    }
+
     populateTaskTable();
 }
 

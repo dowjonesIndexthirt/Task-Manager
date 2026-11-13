@@ -1,0 +1,5 @@
+/home/dom/School_projects/Task-Manager/build/CMakeFiles/CS370.dir
+/home/dom/School_projects/Task-Manager/build/CMakeFiles/edit_cache.dir
+/home/dom/School_projects/Task-Manager/build/CMakeFiles/rebuild_cache.dir
+/home/dom/School_projects/Task-Manager/build/CMakeFiles/CS370_autogen_timestamp_deps.dir
+/home/dom/School_projects/Task-Manager/build/CMakeFiles/CS370_autogen.dir
