@@ -12,16 +12,19 @@ set(CMAKE_AUTORCC ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
+add_compile_options(-O2)
+
+
 add_executable(CS370
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    taskmanager.cpp
-    taskmanager.h
-    procRead.cpp
-    procRead.hpp
-    drewTaskMgr.hpp
-    drewTaskMgr.cpp
+    src/main.cpp
+    src/mainwindow.cpp
+    src/mainwindow.h
+    src/taskmanager.cpp
+    src/taskmanager.h
+    src/procRead.cpp
+    src/procRead.hpp
+    src/drewTaskMgr.hpp
+    src/drewTaskMgr.cpp
 )
 
 target_link_libraries(CS370 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
