@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/dom/School_projects/Task-Manager/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/dom/School_projects/Task-Manager/build/CS370_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o -c /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp",
+  "file": "/home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/dom/School_projects/Task-Manager/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/dom/School_projects/Task-Manager/build/CS370_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/CS370.dir/src/main.cpp.o -c /home/dom/School_projects/Task-Manager/src/main.cpp",
+  "file": "/home/dom/School_projects/Task-Manager/src/main.cpp",
+  "output": "CMakeFiles/CS370.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/dom/School_projects/Task-Manager/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/dom/School_projects/Task-Manager/build/CS370_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/CS370.dir/src/mainwindow.cpp.o -c /home/dom/School_projects/Task-Manager/src/mainwindow.cpp",
+  "file": "/home/dom/School_projects/Task-Manager/src/mainwindow.cpp",
+  "output": "CMakeFiles/CS370.dir/src/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/dom/School_projects/Task-Manager/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/dom/School_projects/Task-Manager/build/CS370_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/CS370.dir/src/taskmanager.cpp.o -c /home/dom/School_projects/Task-Manager/src/taskmanager.cpp",
+  "file": "/home/dom/School_projects/Task-Manager/src/taskmanager.cpp",
+  "output": "CMakeFiles/CS370.dir/src/taskmanager.cpp.o"
+},
+{
+  "directory": "/home/dom/School_projects/Task-Manager/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/dom/School_projects/Task-Manager/build/CS370_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/CS370.dir/src/procRead.cpp.o -c /home/dom/School_projects/Task-Manager/src/procRead.cpp",
+  "file": "/home/dom/School_projects/Task-Manager/src/procRead.cpp",
+  "output": "CMakeFiles/CS370.dir/src/procRead.cpp.o"
+},
+{
+  "directory": "/home/dom/School_projects/Task-Manager/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/dom/School_projects/Task-Manager/build/CS370_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o -c /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp",
+  "file": "/home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp",
+  "output": "CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o"
+}
+]

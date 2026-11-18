@@ -73,7 +73,7 @@ CS370_autogen/timestamp: /usr/lib/qt6/libexec/moc
 CS370_autogen/timestamp: /usr/lib/qt6/libexec/uic
 CS370_autogen/timestamp: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target CS370"
-	/usr/bin/cmake -E cmake_autogen /home/dom/School_projects/Task-Manager/build/CMakeFiles/CS370_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/dom/School_projects/Task-Manager/build/CMakeFiles/CS370_autogen.dir/AutogenInfo.json Debug
 	/usr/bin/cmake -E touch /home/dom/School_projects/Task-Manager/build/CS370_autogen/timestamp
 
 CMakeFiles/CS370.dir/codegen:
@@ -83,85 +83,85 @@ CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o: CMakeFiles/CS370.dir/
 CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o: CS370_autogen/mocs_compilation.cpp
 CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o -MF CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o -c /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o -MF CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.o -c /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp
 
 CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp > CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp > CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp -o CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/build/CS370_autogen/mocs_compilation.cpp -o CMakeFiles/CS370.dir/CS370_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/CS370.dir/src/main.cpp.o: CMakeFiles/CS370.dir/flags.make
 CMakeFiles/CS370.dir/src/main.cpp.o: /home/dom/School_projects/Task-Manager/src/main.cpp
 CMakeFiles/CS370.dir/src/main.cpp.o: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CS370.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/main.cpp.o -MF CMakeFiles/CS370.dir/src/main.cpp.o.d -o CMakeFiles/CS370.dir/src/main.cpp.o -c /home/dom/School_projects/Task-Manager/src/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/main.cpp.o -MF CMakeFiles/CS370.dir/src/main.cpp.o.d -o CMakeFiles/CS370.dir/src/main.cpp.o -c /home/dom/School_projects/Task-Manager/src/main.cpp
 
 CMakeFiles/CS370.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CS370.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/main.cpp > CMakeFiles/CS370.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/main.cpp > CMakeFiles/CS370.dir/src/main.cpp.i
 
 CMakeFiles/CS370.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CS370.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/main.cpp -o CMakeFiles/CS370.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/main.cpp -o CMakeFiles/CS370.dir/src/main.cpp.s
 
 CMakeFiles/CS370.dir/src/mainwindow.cpp.o: CMakeFiles/CS370.dir/flags.make
 CMakeFiles/CS370.dir/src/mainwindow.cpp.o: /home/dom/School_projects/Task-Manager/src/mainwindow.cpp
 CMakeFiles/CS370.dir/src/mainwindow.cpp.o: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CS370.dir/src/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/mainwindow.cpp.o -MF CMakeFiles/CS370.dir/src/mainwindow.cpp.o.d -o CMakeFiles/CS370.dir/src/mainwindow.cpp.o -c /home/dom/School_projects/Task-Manager/src/mainwindow.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/mainwindow.cpp.o -MF CMakeFiles/CS370.dir/src/mainwindow.cpp.o.d -o CMakeFiles/CS370.dir/src/mainwindow.cpp.o -c /home/dom/School_projects/Task-Manager/src/mainwindow.cpp
 
 CMakeFiles/CS370.dir/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CS370.dir/src/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/mainwindow.cpp > CMakeFiles/CS370.dir/src/mainwindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/mainwindow.cpp > CMakeFiles/CS370.dir/src/mainwindow.cpp.i
 
 CMakeFiles/CS370.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CS370.dir/src/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/mainwindow.cpp -o CMakeFiles/CS370.dir/src/mainwindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/mainwindow.cpp -o CMakeFiles/CS370.dir/src/mainwindow.cpp.s
 
 CMakeFiles/CS370.dir/src/taskmanager.cpp.o: CMakeFiles/CS370.dir/flags.make
 CMakeFiles/CS370.dir/src/taskmanager.cpp.o: /home/dom/School_projects/Task-Manager/src/taskmanager.cpp
 CMakeFiles/CS370.dir/src/taskmanager.cpp.o: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CS370.dir/src/taskmanager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/taskmanager.cpp.o -MF CMakeFiles/CS370.dir/src/taskmanager.cpp.o.d -o CMakeFiles/CS370.dir/src/taskmanager.cpp.o -c /home/dom/School_projects/Task-Manager/src/taskmanager.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/taskmanager.cpp.o -MF CMakeFiles/CS370.dir/src/taskmanager.cpp.o.d -o CMakeFiles/CS370.dir/src/taskmanager.cpp.o -c /home/dom/School_projects/Task-Manager/src/taskmanager.cpp
 
 CMakeFiles/CS370.dir/src/taskmanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CS370.dir/src/taskmanager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/taskmanager.cpp > CMakeFiles/CS370.dir/src/taskmanager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/taskmanager.cpp > CMakeFiles/CS370.dir/src/taskmanager.cpp.i
 
 CMakeFiles/CS370.dir/src/taskmanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CS370.dir/src/taskmanager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/taskmanager.cpp -o CMakeFiles/CS370.dir/src/taskmanager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/taskmanager.cpp -o CMakeFiles/CS370.dir/src/taskmanager.cpp.s
 
 CMakeFiles/CS370.dir/src/procRead.cpp.o: CMakeFiles/CS370.dir/flags.make
 CMakeFiles/CS370.dir/src/procRead.cpp.o: /home/dom/School_projects/Task-Manager/src/procRead.cpp
 CMakeFiles/CS370.dir/src/procRead.cpp.o: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CS370.dir/src/procRead.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/procRead.cpp.o -MF CMakeFiles/CS370.dir/src/procRead.cpp.o.d -o CMakeFiles/CS370.dir/src/procRead.cpp.o -c /home/dom/School_projects/Task-Manager/src/procRead.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/procRead.cpp.o -MF CMakeFiles/CS370.dir/src/procRead.cpp.o.d -o CMakeFiles/CS370.dir/src/procRead.cpp.o -c /home/dom/School_projects/Task-Manager/src/procRead.cpp
 
 CMakeFiles/CS370.dir/src/procRead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CS370.dir/src/procRead.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/procRead.cpp > CMakeFiles/CS370.dir/src/procRead.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/procRead.cpp > CMakeFiles/CS370.dir/src/procRead.cpp.i
 
 CMakeFiles/CS370.dir/src/procRead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CS370.dir/src/procRead.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/procRead.cpp -o CMakeFiles/CS370.dir/src/procRead.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/procRead.cpp -o CMakeFiles/CS370.dir/src/procRead.cpp.s
 
 CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o: CMakeFiles/CS370.dir/flags.make
 CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o: /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp
 CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o: CMakeFiles/CS370.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dom/School_projects/Task-Manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o -MF CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o.d -o CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o -c /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o -MF CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o.d -o CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.o -c /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp
 
 CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp > CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp > CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.i
 
 CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp -o CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dom/School_projects/Task-Manager/src/drewTaskMgr.cpp -o CMakeFiles/CS370.dir/src/drewTaskMgr.cpp.s
 
 # Object files for target CS370
 CS370_OBJECTS = \

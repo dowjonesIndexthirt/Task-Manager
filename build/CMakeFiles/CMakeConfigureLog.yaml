@@ -20,6 +20,7 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -32,6 +33,7 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
+      - "/home/dom/.local/bin/uname"
       - "/home/linuxbrew/.linuxbrew/bin/uname"
       - "/home/linuxbrew/.linuxbrew/sbin/uname"
       - "/usr/local/sbin/uname"
@@ -40,8 +42,11 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -80,6 +85,7 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -92,6 +98,7 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
+      - "/home/dom/.local/bin/gmake"
       - "/home/linuxbrew/.linuxbrew/bin/gmake"
       - "/home/linuxbrew/.linuxbrew/sbin/gmake"
       - "/usr/local/sbin/gmake"
@@ -100,69 +107,11 @@ events:
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "CXX compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c++"
-      - "CC"
-      - "g++"
-      - "aCC"
-      - "cl"
-      - "bcc"
-      - "xlC"
-      - "icpx"
-      - "icx"
-      - "clang++"
-    candidate_directories:
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-    searched_directories:
-      - "/home/linuxbrew/.linuxbrew/bin/c++"
-      - "/home/linuxbrew/.linuxbrew/sbin/c++"
-      - "/usr/local/sbin/c++"
-      - "/usr/local/bin/c++"
-      - "/usr/sbin/c++"
-    found: "/usr/bin/c++"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -200,8 +149,11 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -221,7 +173,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
+      Compiler: /usr/bin/g++ 
       Build flags: 
       Id flags:  
       
@@ -255,6 +207,7 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -268,8 +221,11 @@ events:
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -301,6 +257,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -314,8 +271,11 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -347,6 +307,7 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -360,8 +321,11 @@ events:
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -393,6 +357,7 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -406,8 +371,11 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -439,6 +407,7 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -452,8 +421,11 @@ events:
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -485,6 +457,7 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -498,8 +471,11 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -531,6 +507,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -544,8 +521,11 @@ events:
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -577,6 +557,7 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -590,8 +571,11 @@ events:
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -623,6 +607,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -635,6 +620,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/home/dom/.local/bin/dlltool"
       - "/home/linuxbrew/.linuxbrew/bin/dlltool"
       - "/home/linuxbrew/.linuxbrew/sbin/dlltool"
       - "/usr/local/sbin/dlltool"
@@ -648,8 +634,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -681,6 +670,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -694,8 +684,11 @@ events:
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -727,6 +720,7 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -739,6 +733,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/home/dom/.local/bin/tapi"
       - "/home/linuxbrew/.linuxbrew/bin/tapi"
       - "/home/linuxbrew/.linuxbrew/sbin/tapi"
       - "/usr/local/sbin/tapi"
@@ -752,8 +747,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -788,6 +786,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -800,6 +799,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
+      - "/home/dom/.local/bin/gcc-ar-15.2"
       - "/home/linuxbrew/.linuxbrew/bin/gcc-ar-15.2"
       - "/home/linuxbrew/.linuxbrew/sbin/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
@@ -813,8 +813,11 @@ events:
     found: "/usr/bin/gcc-ar-15"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -849,6 +852,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -861,6 +865,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/dom/.local/bin/gcc-ranlib-15.2"
       - "/home/linuxbrew/.linuxbrew/bin/gcc-ranlib-15.2"
       - "/home/linuxbrew/.linuxbrew/sbin/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
@@ -874,8 +879,11 @@ events:
     found: "/usr/bin/gcc-ranlib-15"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -895,8 +903,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg"
-      binary: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg"
+      source: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0"
+      binary: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -906,15 +914,15 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg'
+        Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b44ed/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b44ed.dir/build.make CMakeFiles/cmTC_b44ed.dir/build
-        gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg'
-        Building CXX object CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c75b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5c75b.dir/build.make CMakeFiles/cmTC_5c75b.dir/build
+        gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0'
+        Building CXX object CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/g++   -v -o CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
+        COLLECT_GCC=/usr/bin/g++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
         Target: x86_64-linux-gnu
@@ -922,8 +930,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b44ed.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b44ed.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccpR0WZl.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5c75b.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5c75b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccWy20to.s
         GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -944,16 +952,16 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b44ed.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpR0WZl.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5c75b.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWy20to.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b44ed
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b44ed.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5c75b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c75b.dir/link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
+        COLLECT_GCC=/usr/bin/g++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
@@ -964,14 +972,14 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b44ed' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b44ed.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbd3iS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b44ed /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c75b' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5c75b.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjYcZju.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5c75b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbd3iS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b44ed /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjYcZju.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5c75b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b44ed' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b44ed.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b44ed
-        gmake[1]: Leaving directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c75b' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5c75b.'
+        /usr/bin/g++  -v -Wl,-v CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5c75b
+        gmake[1]: Leaving directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0'
         
       exitCode: 0
   -
@@ -1012,15 +1020,15 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg']
+        ignore line: [Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b44ed/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b44ed.dir/build.make CMakeFiles/cmTC_b44ed.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-T4L7Zg']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c75b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5c75b.dir/build.make CMakeFiles/cmTC_5c75b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-7AlvU0']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
         ignore line: [Target: x86_64-linux-gnu]
@@ -1028,8 +1036,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b44ed.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b44ed.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccpR0WZl.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5c75b.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5c75b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccWy20to.s]
         ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1050,16 +1058,16 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b44ed.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpR0WZl.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5c75b.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWy20to.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b44ed]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b44ed.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5c75b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c75b.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
@@ -1070,13 +1078,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b44ed' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b44ed.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbd3iS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b44ed /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c75b' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5c75b.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjYcZju.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5c75b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccPbd3iS.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccjYcZju.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1094,7 +1102,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b44ed] ==> ignore
+          arg [cmTC_5c75b] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -1109,7 +1117,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1120,7 +1128,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPbd3iS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b44ed /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b44ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjYcZju.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5c75b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5c75b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1167,8 +1175,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-Qi4kuN"
-      binary: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-Qi4kuN"
+      source: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uWsVey"
+      binary: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uWsVey"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1178,17 +1186,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-Qi4kuN'
+        Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uWsVey'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07abc/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_07abc.dir/build.make CMakeFiles/cmTC_07abc.dir/build
-        gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-Qi4kuN'
-        Building CXX object CMakeFiles/cmTC_07abc.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_07abc.dir/src.cxx.o -c /home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-Qi4kuN/src.cxx
-        Linking CXX executable cmTC_07abc
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07abc.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_07abc.dir/src.cxx.o -o cmTC_07abc
-        gmake[1]: Leaving directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-Qi4kuN'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67430/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67430.dir/build.make CMakeFiles/cmTC_67430.dir/build
+        gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uWsVey'
+        Building CXX object CMakeFiles/cmTC_67430.dir/src.cxx.o
+        /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_67430.dir/src.cxx.o -c /home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uWsVey/src.cxx
+        Linking CXX executable cmTC_67430
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67430.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_67430.dir/src.cxx.o -o cmTC_67430
+        gmake[1]: Leaving directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uWsVey'
         
       exitCode: 0
   -
@@ -1252,6 +1260,22 @@ events:
         reason: "no_exist"
       -
         path: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/pkgRedirects/qt5-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/Qt5Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt5-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2012,8 +2036,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2090,6 +2117,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/home/dom/.local/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/home/linuxbrew/.linuxbrew/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -2119,8 +2154,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2197,6 +2235,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/home/dom/.local/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/home/linuxbrew/.linuxbrew/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -2226,8 +2272,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2301,6 +2350,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/home/dom/.local/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/home/linuxbrew/.linuxbrew/Qt6WidgetsToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -2330,8 +2387,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2373,8 +2433,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uHD77x"
-      binary: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uHD77x"
+      source: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-fhElgD"
+      binary: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-fhElgD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2384,17 +2444,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uHD77x'
+        Change Dir: '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-fhElgD'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9aed7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9aed7.dir/build.make CMakeFiles/cmTC_9aed7.dir/build
-        gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uHD77x'
-        Building CXX object CMakeFiles/cmTC_9aed7.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_9aed7.dir/src.cxx.o -c /home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uHD77x/src.cxx
-        Linking CXX executable cmTC_9aed7
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aed7.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_9aed7.dir/src.cxx.o -o cmTC_9aed7
-        gmake[1]: Leaving directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-uHD77x'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d20de/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d20de.dir/build.make CMakeFiles/cmTC_d20de.dir/build
+        gmake[1]: Entering directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-fhElgD'
+        Building CXX object CMakeFiles/cmTC_d20de.dir/src.cxx.o
+        /usr/bin/g++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_d20de.dir/src.cxx.o -c /home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-fhElgD/src.cxx
+        Linking CXX executable cmTC_d20de
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d20de.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_d20de.dir/src.cxx.o -o cmTC_d20de
+        gmake[1]: Leaving directory '/home/dom/School_projects/Task-Manager/build/CMakeFiles/CMakeScratch/TryCompile-fhElgD'
         
       exitCode: 0
   -
@@ -2481,8 +2541,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2534,6 +2597,7 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -2567,6 +2631,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/dom/.local/bin/GL/gl.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/gl.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/gl.h"
       - "/usr/local/sbin/GL/gl.h"
@@ -2585,8 +2650,11 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2640,6 +2708,7 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -2670,6 +2739,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/GL/glx.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/glx.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/glx.h"
       - "/usr/local/sbin/GL/glx.h"
@@ -2688,8 +2758,11 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2743,6 +2816,7 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -2773,6 +2847,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/EGL/egl.h"
       - "/home/linuxbrew/.linuxbrew/bin/EGL/egl.h"
       - "/home/linuxbrew/.linuxbrew/sbin/EGL/egl.h"
       - "/usr/local/sbin/EGL/egl.h"
@@ -2791,8 +2866,11 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2846,6 +2924,7 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -2876,6 +2955,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/GLES2/gl2.h"
       - "/home/linuxbrew/.linuxbrew/bin/GLES2/gl2.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GLES2/gl2.h"
       - "/usr/local/sbin/GLES2/gl2.h"
@@ -2894,8 +2974,11 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -2949,6 +3032,7 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -2979,6 +3063,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/GLES3/gl3.h"
       - "/home/linuxbrew/.linuxbrew/bin/GLES3/gl3.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GLES3/gl3.h"
       - "/usr/local/sbin/GLES3/gl3.h"
@@ -2997,8 +3082,11 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3052,6 +3140,7 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3085,6 +3174,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/dom/.local/bin/GL/xmesa.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/xmesa.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/xmesa.h"
       - "/usr/local/sbin/GL/xmesa.h"
@@ -3120,8 +3210,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3175,6 +3268,7 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3205,6 +3299,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/GL/glu.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/glu.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/glu.h"
       - "/usr/local/sbin/GL/glu.h"
@@ -3237,8 +3332,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3292,6 +3390,7 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3322,6 +3421,7 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3339,8 +3439,11 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libOpenGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3394,6 +3497,8 @@ events:
     names:
       - "GLX"
     candidate_directories:
+      - "/home/dom/.local/bin/libglvnd/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
@@ -3453,6 +3558,8 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/libglvnd/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
@@ -3485,8 +3592,11 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLX.so"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3540,6 +3650,8 @@ events:
     names:
       - "EGL"
     candidate_directories:
+      - "/home/dom/.local/bin/libglvnd/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
@@ -3599,6 +3711,8 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/libglvnd/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
@@ -3631,8 +3745,11 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libEGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3686,6 +3803,7 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3716,6 +3834,7 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3733,8 +3852,11 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3789,6 +3911,7 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3819,6 +3942,7 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3848,6 +3972,7 @@ events:
       - "/opt/lib/"
       - "/opt/"
       - "/usr/lib/X11/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3865,8 +3990,11 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -3921,6 +4049,7 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3954,6 +4083,7 @@ events:
       - "/usr/openwin/lib/"
       - "/usr/shlib/"
     searched_directories:
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -3986,6 +4116,7 @@ events:
       - "/opt/graphics/OpenGL/lib/"
       - "/usr/openwin/lib/"
       - "/usr/shlib/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -4021,8 +4152,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4075,6 +4209,7 @@ events:
       - "vulkan/vulkan.h"
     candidate_directories:
       - "/include/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -4106,6 +4241,7 @@ events:
       - "/usr/include/X11/"
     searched_directories:
       - "/include/vulkan/vulkan.h"
+      - "/home/dom/.local/bin/vulkan/vulkan.h"
       - "/home/linuxbrew/.linuxbrew/bin/vulkan/vulkan.h"
       - "/home/linuxbrew/.linuxbrew/sbin/vulkan/vulkan.h"
       - "/usr/local/sbin/vulkan/vulkan.h"
@@ -4124,8 +4260,11 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4178,6 +4317,7 @@ events:
       - "vulkan"
     candidate_directories:
       - "/lib/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -4209,6 +4349,7 @@ events:
       - "/usr/lib/X11/"
     searched_directories:
       - "/lib/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -4226,8 +4367,11 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libvulkan.so"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4280,6 +4424,7 @@ events:
       - "glslc"
     candidate_directories:
       - "/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -4309,6 +4454,7 @@ events:
       - "/opt/"
     searched_directories:
       - "/bin/glslc"
+      - "/home/dom/.local/bin/glslc"
       - "/home/linuxbrew/.linuxbrew/bin/glslc"
       - "/home/linuxbrew/.linuxbrew/sbin/glslc"
       - "/usr/local/sbin/glslc"
@@ -4339,8 +4485,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4391,6 +4540,7 @@ events:
       - "glslangValidator"
     candidate_directories:
       - "/bin/"
+      - "/home/dom/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
       - "/usr/local/sbin/"
@@ -4420,6 +4570,7 @@ events:
       - "/opt/"
     searched_directories:
       - "/bin/glslangValidator"
+      - "/home/dom/.local/bin/glslangValidator"
       - "/home/linuxbrew/.linuxbrew/bin/glslangValidator"
       - "/home/linuxbrew/.linuxbrew/sbin/glslangValidator"
       - "/usr/local/sbin/glslangValidator"
@@ -4450,8 +4601,11 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4535,6 +4689,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/home/dom/.local/Qt6DBusToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt6dbustools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/home/linuxbrew/.linuxbrew/Qt6DBusToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -4564,8 +4726,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4675,8 +4840,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4781,8 +4949,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4879,8 +5050,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -4947,6 +5121,14 @@ events:
         reason: "no_exist"
       -
         path: "/home/dom/School_projects/Task-Manager/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/dom/.local/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -5331,8 +5513,11 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
+        - "/home/dom/.local/bin"
+        - "/home/dom/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/dom/.local/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
