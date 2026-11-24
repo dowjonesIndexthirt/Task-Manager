@@ -26,8 +26,46 @@ void configureQtPlatform()
 
 int main(int argc, char *argv[])
 {
+    QApplication app(argc, arv);
+
+    app.setStyleSheet(R"(
+        QWidget {
+            background-color: #000000;
+            color: #ffffff
+        }
+        
+        QPushButton{
+            background-color: #000000
+            color: #000000:
+            border: 1px solid #ffffff:
+            padding: 6px;
+        }
+        
+        QLineEdit, QTextEdit, QPlainTextEdit {
+            background-color: #111111;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+        
+        QMenu {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        QMenu::item:selected {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        QComboBox, QSpinBox {
+            background-color: #111111;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+    )");
+
     configureQtPlatform();
-    QApplication app(argc, argv);
 
     MainWindow window;
     window.show();
