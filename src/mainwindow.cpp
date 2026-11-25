@@ -19,6 +19,11 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     setWindowTitle(tr("Task Manager"));
+    taskTimer = new QTimer(this);
+
+    connect(taskTimer, &QTimer::timeout, this, &MainWindow::refreshTaskInfo);
+
+    taskTimer->start(1000);
 
     auto *container = new QWidget(this);
     auto *layout = new QVBoxLayout(container);
@@ -81,12 +86,7 @@ void MainWindow::refreshTaskInfo()
     populateTaskTable();
 }
 
-void MainWindow::refreshTaskInfoPeriodically()
-{
-    QTimer *timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &MainWindow::refreshTaskInfo);
-    timer->start(5000); 
-}
+void MainWindow::refreshTaskInfoPeriodically();
 
 void MainWindow::sortTasks()
 {

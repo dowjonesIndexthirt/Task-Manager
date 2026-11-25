@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow()
 
 private slots:
     void showSelectedTaskInfo();
@@ -27,6 +28,9 @@ private:
     QTableWidget *taskTable = nullptr;
     QComboBox *sortField = nullptr;
     QComboBox *sortOrder = nullptr;
+    QTime *taskTimer;
 };
+
+
 
 #endif // MAINWINDOW_H
