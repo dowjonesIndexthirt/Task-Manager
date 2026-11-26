@@ -7,7 +7,7 @@ build a struct that contains basic sytem info
 
 #pragma once
 
-#define PROC_DEBUG
+// #define PROC_DEBUG
 
 #include <sys/types.h>
 #include <iostream>

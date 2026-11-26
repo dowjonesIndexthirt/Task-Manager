@@ -1,7 +1,9 @@
-Ronin's doohickey with the shiny proc reader (only reads all PIDs)
-
+To view debuggified info add:
 ```cpp
-#define PROC_DEBUG   // Comment this out for the full build, this displays diagnostic info such as failed symlink etc
+#define PROC_DEBUG
 ```
+Before your `#include` of the hpp files.
 
-Shoo
+[main](main.cpp) includes how to use the things.
+
+Have fun

@@ -1,23 +1,28 @@
-#include "sysInfo.hpp"
-
 #include <iostream>
 #include <vector>
 
-#include <thread>
-#include <chrono>
+#include "etc.hpp"
+
+#define PROC_DEBUG
+#include "sysInfo.hpp"
+#include "pidRead.hpp"
 
 int main(void){
-    systemInfo a;
-    std::cout << collectSysInfo(a) << std::endl;
+    systemInfo sysInfo;
+    collectSysInfo(sysInfo);
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    percentageSystemInfo perc = getPercentages(sysInfo, 500);
+    std::cout << "CPU Usage: " << perc.cpuUsage << "%\n"
+                "Ram Usage: " << perc.memoryUsage << "%\n"
+                "Swap Usage: " << perc.swapUsage << "%\n";
+    
+    std::vector<processInfo> pids = readAllPIDs();
 
-    systemInfo b;
-    std::cout << collectSysInfo(b) << std::endl;
+    // Weed out all processes using less than 1% of max ram
+    std::vector<processInfo> culled = threshFunc(pids, sysInfo, 1.0);
 
-    percentageSystemInfo total= calcPercentages(a, b);
-
-    std::cout << total.cpuUsage << '\n' << total.memoryUsage << std::endl;
+    for (const processInfo& proc : culled)
+        std::cout << proc << "\n";
 
     return 0;
 }

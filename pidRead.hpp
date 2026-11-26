@@ -22,7 +22,7 @@
 
 #pragma once
 
-#define PROC_DEBUG   // Comment this out for the full build, this displays diagnostic info such as failed symlink etc
+// #define PROC_DEBUG   // Comment this out for the full build, this displays diagnostic info such as failed symlink etc
 
 #include <sys/types.h>
 #include <iostream>
